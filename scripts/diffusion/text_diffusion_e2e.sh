@@ -15,4 +15,4 @@ python train_text_diffusion.py \
   --loss_type l1 \
   --beta_schedule linear \
   --sampling_timesteps 250 \
-  --save_and_sample_every 1000
+  --save_and_sample_every 5000

@@ -354,7 +354,7 @@ class Trainer(object):
         ema_decay = 0.995,
         adam_betas = (0.9, 0.99),
         adam_weight_decay = 0.01,
-        save_and_sample_every = 1000,
+        save_and_sample_every = 2000,   # 原来是2000
         num_samples = 25,
         results_folder = './results',
         amp = False,
@@ -468,7 +468,7 @@ class Trainer(object):
             'scaler': self.accelerator.scaler.state_dict() if exists(self.accelerator.scaler) else None
         }
 
-        torch.save(data, str(self.results_folder / f'model.pt'))
+        torch.save(data, str(self.results_folder / f'model_{self.step}.pt')) # 原来没有_{self.step}
 
     def load(self, file_path=None):
         file_path = Path(file_path) if exists(file_path) else self.results_folder
