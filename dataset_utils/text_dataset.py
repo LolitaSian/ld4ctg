@@ -25,7 +25,7 @@ def get_dataset(dataset_name, metadata=False, synthetic_train_path=None):
         del(dataset['validation'])
         dataset = process_sst_dataset(dataset)
     elif dataset_name == 'ag_news':
-        dataset = load_dataset('pietrolesci/ag_news', 'original')
+        dataset = load_dataset('ag_news')
         train_ds = dataset['train']
         train_val_ds = train_ds.train_test_split(test_size=1000, seed=42)
         train_val_ds['valid'] = train_val_ds['test']

@@ -13,4 +13,7 @@ python train_text_diffusion.py \
   --scale_shift \
   --loss_type l1 \
   --beta_schedule linear \
-  --disable_dropout
+  --disable_dropout \
+  --eval_batch_size 256 \
+  --sampling_timesteps 5 \
+  --save_and_sample_every 5

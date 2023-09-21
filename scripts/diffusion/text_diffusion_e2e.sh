@@ -4,6 +4,7 @@ python train_text_diffusion.py \
   --learning_rate 1e-4 \
   --num_train_steps 100000 \
   --train_batch_size 256 \
+  --eval_batch_size 256 \
   --tx_dim 768 \
   --tx_depth 12 \
   --objective pred_x0 \

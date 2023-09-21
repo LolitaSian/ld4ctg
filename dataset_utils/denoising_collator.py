@@ -40,18 +40,19 @@ class DataCollatorForBartDenoisingLM:
         return batch
 
 
-
 def main():
     tokenizer: PreTrainedTokenizerBase = AutoTokenizer.from_pretrained("facebook/bart-base")
     model = BartForConditionalGeneration.from_pretrained("facebook/bart-base")
-    
+
     from text_dataset import get_dataset
     dataset = get_dataset('e2e')
+
     def tokenization(example):
         return tokenizer(example["text"], padding="max_length", truncation=True, max_length=64)
+
     dataset = dataset.map(tokenization, remove_columns='text')
     # import pdb; pdb.set_trace()
-    
+
     dl = DataLoader(
         dataset['train'],
         collate_fn=DataCollatorForBartDenoisingLM(tokenizer),
@@ -60,9 +61,9 @@ def main():
     )
     for b in dl:
         print(f'label: {tokenizer.batch_decode(b["labels"])}')
-        print(f'input_ids: {tokenizer.batch_decode(b["input_ids"])}')   
+        print(f'input_ids: {tokenizer.batch_decode(b["input_ids"])}')
         generated_ids = model.generate(b["input_ids"], attention_mask=b["attention_mask"], max_length=64)
-        print(f'output: {tokenizer.batch_decode(generated_ids, skip_special_tokens=True)}')   
+        print(f'output: {tokenizer.batch_decode(generated_ids, skip_special_tokens=True)}')
 
 
 if __name__ == "__main__":
