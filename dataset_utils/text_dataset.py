@@ -20,12 +20,13 @@ def get_dataset(dataset_name, metadata=False, synthetic_train_path=None):
         dataset = load_dataset("text", data_files={f'{split}': os.path.join(roc_data_path, f'roc_{split}.json') for split in ['train', 'valid']})
         dataset = process_roc_dataset(dataset)
     elif dataset_name == 'sst':
-        dataset = load_dataset("sst")
+        sst_data_path = 'datasets/SST2'
+        dataset = load_dataset(sst_data_path)
         dataset['valid'] = dataset['validation']
         del(dataset['validation'])
         dataset = process_sst_dataset(dataset)
     elif dataset_name == 'ag_news':
-        dataset = load_dataset('ag_news')
+        dataset = load_dataset('datasets/AgNews')
         train_ds = dataset['train']
         train_val_ds = train_ds.train_test_split(test_size=1000, seed=42)
         train_val_ds['valid'] = train_val_ds['test']
@@ -75,8 +76,9 @@ def process_sst_dataset(dataset):
 def process_ag_news_dataset(dataset):
     def process_ag_news_text(example):
         # return {'text': PreTrainedTokenizerBase.clean_up_tokenization(f'Title: {example["title"]}<pad> Description: {example["description"]}'.strip()), 'label':example['label']-1}
-        return {'text': PreTrainedTokenizerBase.clean_up_tokenization(example["description"].strip()), 'label':example['label']-1}
-    dataset = dataset.map(process_ag_news_text, load_from_cache_file=False, remove_columns=['title', 'description', 'class'])
+        return {'text': PreTrainedTokenizerBase.clean_up_tokenization(example["text"].strip()), 'label':example['label']-1}
+    # dataset = dataset.map(process_ag_news_text, load_from_cache_file=False, remove_columns=['title', 'description', 'class'])
+    dataset = dataset.map(process_ag_news_text)
     return dataset
 
 

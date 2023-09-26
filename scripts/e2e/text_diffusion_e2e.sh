@@ -17,4 +17,5 @@ python train_text_diffusion_t5.py \
   --beta_schedule linear \
   --sampling_timesteps 250 \
   --save_and_sample_every 10000 \
+  --wandb_project denoising_diffusion \
   --wandb_name e2e-t5-linear

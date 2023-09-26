@@ -418,17 +418,15 @@ class Trainer(object):
         )
 
         if self.accelerator.is_main_process:
-            run = os.path.split(__file__)[-1].split(".")[0]
+            run = args.wandb_project
             if args.wandb_name:
                 self.accelerator.init_trackers(run, config=args, init_kwargs={"wandb":
-                                                                                  {"project": "denoising_diffusion",
-                                                                                   "dir": results_folder,
-                                                                                   "name": args.wandb_name
-                                                                                   }})
+                    {
+                        "dir": results_folder,
+                        "name": args.wandb_name
+                    }})
             else:
-                self.accelerator.init_trackers(run, config=args, init_kwargs={"wandb":
-                                                                                  {"project": "denoising_diffusion",
-                                                                                   "dir": results_folder}})
+                self.accelerator.init_trackers(run, config=args, init_kwargs={"wandb": {"dir": results_folder}})
 
         self.accelerator.native_amp = amp
 

@@ -41,8 +41,10 @@ class DataCollatorForBartDenoisingLM:
 
 
 def main():
-    tokenizer: PreTrainedTokenizerBase = AutoTokenizer.from_pretrained("facebook/bart-base")
-    model = BartForConditionalGeneration.from_pretrained("facebook/bart-base")
+    # tokenizer: PreTrainedTokenizerBase = AutoTokenizer.from_pretrained("facebook/bart-base")
+    # model = BartForConditionalGeneration.from_pretrained("facebook/bart-base")
+    tokenizer: PreTrainedTokenizerBase = AutoTokenizer.from_pretrained("../bart-base")
+    model = BartForConditionalGeneration.from_pretrained("../bart-base")
 
     from text_dataset import get_dataset
     dataset = get_dataset('e2e')

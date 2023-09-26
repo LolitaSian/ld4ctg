@@ -6,7 +6,7 @@ python train_text_diffusion.py \
   --tx_dim 768 \
   --tx_depth 12 \
   --objective pred_x0 \
-  --enc_dec_model facebook/bart-base \
+  --enc_dec_model ./bart-base/ \
   --num_samples 1000 \
   --normalize_latent \
   --scale_shift \
@@ -15,4 +15,6 @@ python train_text_diffusion.py \
   --loss_type l1 \
   --class_conditional \
   --self_condition \
-  --save_and_sample_every 10000
+  --save_and_sample_every 10000 \
+  --wandb_project denoising_diffusion \
+  --wandb_name ag-bart-linear

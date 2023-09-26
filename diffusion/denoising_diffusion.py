@@ -94,6 +94,7 @@ def cosine_beta_schedule(timesteps, s=0.008):
     betas = 1 - (alphas_cumprod[1:] / alphas_cumprod[:-1])
     return torch.clip(betas, 0, 0.999)
 
+
 def sqrt_beta_schedule(timesteps):  # 添加这个函数之后还要修改train_text_diffusion.py
     steps = timesteps + 1
     x = torch.linspace(0, timesteps, steps, dtype=torch.float64)
@@ -101,6 +102,7 @@ def sqrt_beta_schedule(timesteps):  # 添加这个函数之后还要修改train_
     alphas_cumprod = alphas_cumprod / alphas_cumprod[0]
     betas = 1 - (alphas_cumprod[1:] / alphas_cumprod[:-1])
     return torch.clip(betas, 0, 0.999)
+
 
 def set_seeds(seed):
     random.seed(seed)
@@ -223,6 +225,7 @@ class GaussianDiffusion(nn.Module):
     '''
     对latent变量进行归一化和反归一化处理。
     '''
+
     def normalize_latent(self, x_start):
         eps = 1e-5
 
@@ -416,7 +419,7 @@ class Trainer(object):
         )
 
         if self.accelerator.is_main_process:
-            run = os.path.split(__file__)[-1].split(".")[0]
+            run = args.wandb_project
             if args.wandb_name:
                 self.accelerator.init_trackers(run, config=args,
                                                init_kwargs={"wandb": {"dir": results_folder, "name": args.wandb_name}})
