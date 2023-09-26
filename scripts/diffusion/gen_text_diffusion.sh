@@ -1,1 +1,6 @@
-python train_text_diffusion.py --gen_data --resume_dir saved_models/sst/2022-12-09_15-06-59 --sampling_timesteps 250 --num_samples 1000 --ddim_sampling_eta 1
+python train_text_diffusion.py \
+  --gen_data \
+  --resume_dir saved_models/e2e \
+  --sampling_timesteps 250 \
+  --num_samples 1000 \
+  --ddim_sampling_eta 1

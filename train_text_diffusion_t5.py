@@ -6,7 +6,7 @@ import os
 import numpy as np
 
 import CONSTANTS
-from diffusion.denoising_diffusion import GaussianDiffusion, Trainer
+from diffusion.denoising_diffusion_t5 import GaussianDiffusion, Trainer
 from model.diffusion_transformer import DiffusionTransformer
 
 ATTN_HEAD_DIM=64

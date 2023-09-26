@@ -15,3 +15,4 @@ print(ppl_results)
 wordcount = load("word_count")
 wc_results = wordcount.compute(data = predictions)
 print(wc_results)
+

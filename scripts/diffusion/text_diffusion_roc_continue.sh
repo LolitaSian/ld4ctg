@@ -1,10 +1,9 @@
 python train_text_diffusion.py \
-  --dataset_name e2e \
-  --adam_weight_decay 0.01 \
+  --dataset_name roc \
   --learning_rate 1e-4 \
-  --num_train_steps 100000 \
-  --train_batch_size 256 \
-  --eval_batch_size 256 \
+  --num_train_steps 500000 \
+  --train_batch_size 128 \
+  --eval_batch_size 128 \
   --tx_dim 768 \
   --tx_depth 12 \
   --objective pred_x0 \
@@ -15,5 +14,7 @@ python train_text_diffusion.py \
   --scale_shift \
   --loss_type l1 \
   --beta_schedule linear \
-  --sampling_timesteps 250 \
-  --save_and_sample_every 5000
+  --disable_dropout \
+  --save_and_sample_every 10000 \
+  --resume_training \
+  --resume_dir saved_models/roc

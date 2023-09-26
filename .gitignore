@@ -133,3 +133,5 @@ dmypy.json
 **/saved_lm_models
 **/saved_cls_models
 *.pt
+*.bin
+*.safetensors

@@ -14,4 +14,5 @@ python train_text_diffusion.py \
   --beta_schedule linear \
   --loss_type l1 \
   --class_conditional \
-  --self_condition
+  --self_condition \
+  --save_and_sample_every 10000

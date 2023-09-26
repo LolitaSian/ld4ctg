@@ -12,9 +12,8 @@ from einops import rearrange, reduce
 from tqdm.auto import tqdm
 from ema_pytorch import EMA
 
-from transformers import get_scheduler, AutoTokenizer, PreTrainedTokenizerBase
+from transformers import get_scheduler, AutoTokenizer, PreTrainedTokenizerBase, T5ForConditionalGeneration
 from transformers.modeling_outputs import BaseModelOutput
-from transformers.models.bart.modeling_bart import BartForConditionalGeneration
 
 from accelerate import Accelerator
 import wandb
@@ -94,13 +93,15 @@ def cosine_beta_schedule(timesteps, s=0.008):
     betas = 1 - (alphas_cumprod[1:] / alphas_cumprod[:-1])
     return torch.clip(betas, 0, 0.999)
 
-def sqrt_beta_schedule(timesteps):  # 添加这个函数之后还要修改train_text_diffusion.py
+
+def sqrt_beta_schedule(timesteps):
     steps = timesteps + 1
     x = torch.linspace(0, timesteps, steps, dtype=torch.float64)
     alphas_cumprod = 1 - torch.sqrt(x / timesteps + 0.0001)
     alphas_cumprod = alphas_cumprod / alphas_cumprod[0]
     betas = 1 - (alphas_cumprod[1:] / alphas_cumprod[:-1])
     return torch.clip(betas, 0, 0.999)
+
 
 def set_seeds(seed):
     random.seed(seed)
@@ -223,6 +224,7 @@ class GaussianDiffusion(nn.Module):
     '''
     对latent变量进行归一化和反归一化处理。
     '''
+
     def normalize_latent(self, x_start):
         eps = 1e-5
 
@@ -418,10 +420,15 @@ class Trainer(object):
         if self.accelerator.is_main_process:
             run = os.path.split(__file__)[-1].split(".")[0]
             if args.wandb_name:
-                self.accelerator.init_trackers(run, config=args,
-                                               init_kwargs={"wandb": {"dir": results_folder, "name": args.wandb_name}})
+                self.accelerator.init_trackers(run, config=args, init_kwargs={"wandb":
+                                                                                  {"project": "denoising_diffusion",
+                                                                                   "dir": results_folder,
+                                                                                   "name": args.wandb_name
+                                                                                   }})
             else:
-                self.accelerator.init_trackers(run, config=args, init_kwargs={"wandb": {"dir": results_folder}})
+                self.accelerator.init_trackers(run, config=args, init_kwargs={"wandb":
+                                                                                  {"project": "denoising_diffusion",
+                                                                                   "dir": results_folder}})
 
         self.accelerator.native_amp = amp
 
@@ -438,8 +445,8 @@ class Trainer(object):
         self.max_seq_len = diffusion.max_seq_len
 
         # Init Encoder-decoder model
-        assert 'bart' in args.enc_dec_model
-        self.bart_model = BartForConditionalGeneration.from_pretrained(args.enc_dec_model)
+        assert 't5' in args.enc_dec_model
+        self.t5_model = T5ForConditionalGeneration.from_pretrained(args.enc_dec_model)
         self.tokenizer: PreTrainedTokenizerBase = AutoTokenizer.from_pretrained(args.enc_dec_model)
 
         # dataset and dataloader
@@ -451,9 +458,9 @@ class Trainer(object):
         self.num_samples = min(self.num_samples, len(self.dataset['valid']['text']))
         # Subsample train and val splits for computing language generation during runtime
 
-        self.dataloader = text_dataset.get_dataloader(args, dataset['train'], self.bart_model.config, self.tokenizer,
+        self.dataloader = text_dataset.get_dataloader(args, dataset['train'], self.t5_model.config, self.tokenizer,
                                                       self.max_seq_len)
-        self.val_dataloader = text_dataset.get_dataloader(args, dataset['valid'], self.bart_model.config,
+        self.val_dataloader = text_dataset.get_dataloader(args, dataset['valid'], self.t5_model.config,
                                                           self.tokenizer, self.max_seq_len)
 
         training_lengths = [min(sum(self.dataloader.dataset[idx]['attention_mask']), self.max_seq_len) for idx in
@@ -499,8 +506,8 @@ class Trainer(object):
 
         # prepare model, dataloader, optimizer with accelerator
 
-        self.diffusion, self.bart_model, self.opt, self.dataloader, self.lr_scheduler, self.val_dataloader = self.accelerator.prepare(
-            self.diffusion, self.bart_model, self.opt, self.dataloader, lr_scheduler, self.val_dataloader)
+        self.diffusion, self.t5_model, self.opt, self.dataloader, self.lr_scheduler, self.val_dataloader = self.accelerator.prepare(
+            self.diffusion, self.t5_model, self.opt, self.dataloader, lr_scheduler, self.val_dataloader)
         self.data_iter = cycle(self.dataloader)
         self.val_iter = cycle(self.val_dataloader)
         self.reference_dict = {}
@@ -614,8 +621,8 @@ class Trainer(object):
                     if self.args.normalize_latent:
                         latents = self.ema.ema_model.unnormalize_latent(latents)
                     encoder_output = BaseModelOutput(last_hidden_state=latents.clone())
-                    sample_ids = self.bart_model.generate(encoder_outputs=encoder_output, attention_mask=mask.clone(),
-                                                          **constant.generate_kwargs['beam'])
+                    sample_ids = self.t5_model.generate(encoder_outputs=encoder_output, attention_mask=mask.clone(),
+                                                        **constant.generate_kwargs['beam'])
                     texts_list = [self.tokenizer.decode(g, skip_special_tokens=True, clean_up_tokenization_spaces=True)
                                   for g in sample_ids]
                     texts_list = [text.strip() for text in texts_list if len(text.strip()) > 0]
@@ -697,8 +704,8 @@ class Trainer(object):
                     latents = self.ema.ema_model.unnormalize_latent(latents)
                 for k, kwargs in constant.generate_kwargs.items():
                     encoder_output = BaseModelOutput(last_hidden_state=latents.clone())
-                    sample_ids = self.bart_model.generate(encoder_outputs=encoder_output, attention_mask=mask.clone(),
-                                                          **kwargs)
+                    sample_ids = self.t5_model.generate(encoder_outputs=encoder_output, attention_mask=mask.clone(),
+                                                        **kwargs)
                     texts_list = [self.tokenizer.decode(g, skip_special_tokens=True, clean_up_tokenization_spaces=True)
                                   for g in sample_ids]
                     texts_list = [text.strip() for text in texts_list if len(text.strip()) > 0]
@@ -766,8 +773,8 @@ class Trainer(object):
                 for grad_accum_step in range(self.gradient_accumulate_every):
                     data = next(self.data_iter).to(device)
                     with torch.no_grad():
-                        latent = self.bart_model.get_encoder()(input_ids=data['input_ids'],
-                                                               attention_mask=data['attention_mask']).last_hidden_state
+                        latent = self.t5_model.get_encoder()(input_ids=data['input_ids'],
+                                                             attention_mask=data['attention_mask']).last_hidden_state
                         if self.args.normalize_latent:
                             if self.step == 0 and grad_accum_step == 0:
                                 latent_vecs = torch.cat(
@@ -820,7 +827,7 @@ class Trainer(object):
                             total_val_ema_loss = 0.
                             for grad_accum_step in range(self.gradient_accumulate_every):
                                 data = next(self.val_iter).to(device)
-                                latent = self.bart_model.get_encoder()(input_ids=data['input_ids'], attention_mask=data[
+                                latent = self.t5_model.get_encoder()(input_ids=data['input_ids'], attention_mask=data[
                                     'attention_mask']).last_hidden_state
                                 if self.args.normalize_latent or self.args.scale_latent:
                                     latent = self.diffusion.normalize_latent(latent)
