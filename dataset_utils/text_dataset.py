@@ -76,7 +76,7 @@ def process_sst_dataset(dataset):
 def process_ag_news_dataset(dataset):
     def process_ag_news_text(example):
         # return {'text': PreTrainedTokenizerBase.clean_up_tokenization(f'Title: {example["title"]}<pad> Description: {example["description"]}'.strip()), 'label':example['label']-1}
-        return {'text': PreTrainedTokenizerBase.clean_up_tokenization(example["text"].strip()), 'label':example['label']-1}
+        return {'text': PreTrainedTokenizerBase.clean_up_tokenization(example["text"].strip()), 'label':example['label']}
     # dataset = dataset.map(process_ag_news_text, load_from_cache_file=False, remove_columns=['title', 'description', 'class'])
     dataset = dataset.map(process_ag_news_text)
     return dataset
