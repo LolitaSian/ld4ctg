@@ -3,7 +3,6 @@ from utils import file_utils
 from transformers import AutoConfig
 import json
 import os
-import numpy as np
 
 import CONSTANTS
 from diffusion.denoising_diffusion_t5 import GaussianDiffusion, Trainer

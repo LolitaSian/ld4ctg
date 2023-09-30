@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="lyxin@183.175.12.53:22 password" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
-    <option name="confirmBeforeUploading" value="false" />
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="lyxin@183.175.12.53:22 password">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
+            <excludedPath path="/assist_model" />
             <excludedPath path="/saved_models" />
-            <excludedPath local="true" path="$PROJECT_DIR$/saved_models" />
-            <excludedPath local="true" path="$PROJECT_DIR$/assist" />
-            <excludedPath local="true" path="$PROJECT_DIR$/README.md" />
-            <excludedPath local="true" path="$PROJECT_DIR$/figures" />
-            <excludedPath local="true" path="$PROJECT_DIR$/bart-base" />
-            <excludedPath local="true" path="$PROJECT_DIR$/t5-base" />
-            <excludedPath path="/t5-base" />
-            <excludedPath path="/bart-base" />
           </excludedPaths>
         </serverdata>
       </paths>
@@ -29,6 +21,5 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

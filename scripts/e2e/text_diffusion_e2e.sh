@@ -8,14 +8,15 @@ python train_text_diffusion_t5.py \
   --tx_dim 768 \
   --tx_depth 12 \
   --objective pred_x0 \
-  --enc_dec_model ./t5-base/ \
+  --enc_dec_model ./assist_model/t5-base/ \
   --num_samples 1000 \
   --self_condition \
   --normalize_latent \
   --scale_shift \
   --loss_type l1 \
   --beta_schedule linear \
-  --sampling_timesteps 250 \
-  --save_and_sample_every 10000 \
+  --sampling_timesteps 2 \
+  --save_and_sample_every 2 \
   --wandb_project denoising_diffusion \
   --wandb_name e2e-t5-linear
+

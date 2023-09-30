@@ -1,21 +1,23 @@
 import torch
 from evaluate import load
-from transformers import PreTrainedTokenizerBase
 from sentence_transformers import SentenceTransformer
 from nltk.util import ngrams
 from collections import defaultdict
 import spacy
-import numpy as np
-import wandb
+import os
+
+cur_dir = os.path.split(__file__)[0]
+model_dir = '/'.join(cur_dir.split('/')[:-1])
 
 def compute_perplexity(all_texts_list, model_id='gpt2-large'):
-    torch.cuda.empty_cache() 
-    perplexity = load("perplexity", module_type="metric")
+    torch.cuda.empty_cache()
+    perplexity = load(f"{cur_dir}/perplexity", module_type="metric")
+    model_id = f"{model_dir}/assist_model/{model_id}"
     results = perplexity.compute(predictions=all_texts_list, model_id=model_id, device='cuda')
     return results['mean_perplexity']
 
 def compute_wordcount(all_texts_list):
-    wordcount = load("word_count")
+    wordcount = load(f"{cur_dir}/word_count")
     wordcount = wordcount.compute(data=all_texts_list)
     return wordcount['unique_words']
 
@@ -61,22 +63,23 @@ def compute_memorization(all_texts_list, human_references, n=4):
     return duplicate/total
 
 def compute_mauve(all_texts_list, human_references, model_id):
-    torch.cuda.empty_cache() 
+    torch.cuda.empty_cache()
     assert model_id in {'gpt2-large', 'all-mpnet-base-v2'}
-    mauve = load("mauve")
+    mauve = load(f"{cur_dir}/mauve")
     assert len(all_texts_list) == len(human_references)
 
     if model_id == 'all-mpnet-base-v2':
+        model_id = f"{model_dir}/assist_model/{model_id}"
         model = SentenceTransformer(model_id).cuda()
         #Sentences are encoded by calling model.encode()
         all_texts_list_embedding = model.encode(all_texts_list)
         human_references_embedding = model.encode(human_references)
         results = mauve.compute(predictions=all_texts_list, p_features=all_texts_list_embedding, references=human_references, q_features=human_references_embedding, featurize_model_name=model_id, max_text_length=256, device_id=0, mauve_scaling_factor=8,)
     elif model_id == 'gpt2-large':
+        model_id = f"{model_dir}/assist_model/{model_id}"
         results = mauve.compute(predictions=all_texts_list, references=human_references, featurize_model_name=model_id, max_text_length=256, device_id=0)
     else:
         raise NotImplementedError
-    
+
     return results.mauve, results.divergence_curve
 
-    

@@ -1,23 +1,9 @@
 import math
 from functools import partial
-import copy
-from pathlib import Path
-from random import random
-from collections import namedtuple
-from multiprocessing import cpu_count
-import os
-
 import torch
 from torch import nn
-from torch import einsum
-import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
 
-from torch.optim import AdamW
-from torchvision import transforms as T, utils
-
-from einops import rearrange, reduce, repeat
-from einops.layers.torch import Rearrange
+from einops import rearrange, repeat
 
 from model.x_transformer import AbsolutePositionalEmbedding, Encoder, group_dict_by_key, string_begins_with
 

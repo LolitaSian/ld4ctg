@@ -136,5 +136,4 @@ dmypy.json
 *.bin
 *.safetensors
 
-/bart-base
-/t5-base
+assist_model/
