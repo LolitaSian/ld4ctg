@@ -83,7 +83,7 @@ def main(args):
         return
     if args.eval_test:
         trainer.load(args.resume_dir)
-        
+
         for seed in [42, 43, 44, 45, 46]:
             trainer.dataset = trainer.dataset.shuffle(seed)
             trainer.sample(seed=seed, test=True)
