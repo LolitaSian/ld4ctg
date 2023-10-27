@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda5a29e-efee-410f-b8fd-d15f7ca71f97" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ld4ctg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ld4ctg.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_ag_news.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_ag_news.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_sst2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_sst2.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_text_diffusion.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_text_diffusion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +149,8 @@
       <workItem from="1696926123123" duration="253000" />
       <workItem from="1697370622706" duration="1229000" />
       <workItem from="1697530927221" duration="2940000" />
-      <workItem from="1698406411576" duration="32000" />
+      <workItem from="1698406411576" duration="674000" />
+      <workItem from="1698408808519" duration="655000" />
     </task>
     <servers />
   </component>
