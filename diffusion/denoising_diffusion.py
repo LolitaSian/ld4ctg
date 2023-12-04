@@ -662,7 +662,7 @@ class Trainer(object):
             reference_texts = {k: v[:num_samples] for k, v in reference_texts.items()}
         else:
             if test:
-                reference_texts[f'test'] = self.dataset['test']['text'][:num_samples]
+                reference_texts['test'] = self.dataset['test']['text'][:num_samples]
                 reference_texts['train'] = self.dataset['train']['text'][:num_samples]
             else:
                 reference_texts['val'] = self.dataset['valid']['text'][:num_samples]
