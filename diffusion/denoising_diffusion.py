@@ -769,8 +769,26 @@ class Trainer(object):
                 for grad_accum_step in range(self.gradient_accumulate_every):
                     data = next(self.data_iter).to(device)
                     with torch.no_grad():
-                        latent = self.bart_model.get_encoder()(input_ids=data['input_ids'],
+                        bart_latent = self.bart_model.get_encoder()(input_ids=data['input_ids'],
                                                                attention_mask=data['attention_mask']).last_hidden_state
+
+                        '''
+                        添加双曲空间！！！
+                        '''
+                        # 写法1
+                        import geoopt.manifolds as manifolds
+                        # 创建 Poincaré Ball 模型
+                        poincare_ball = manifolds.PoincareBall()
+                        # 对输入数据进行双曲空间映射
+                        # 使用 Poincaré Ball 模型进行映射
+                        latent = poincare_ball.projx(bart_latent)
+
+                        # # 写法2
+                        # import geoopt.geoopt.manifolds.poincare.math as pm
+                        # pm_func = pm.expmap0
+                        #
+                        # latent = pm_func(bart_latent)
+
                         if self.args.normalize_latent:
                             if self.step == 0 and grad_accum_step == 0:
                                 latent_vecs = torch.cat(
