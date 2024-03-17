@@ -155,7 +155,7 @@ if __name__ == "__main__":
     parser.add_argument("--self_condition", action="store_true", default=False)
     parser.add_argument("--ddim_sampling_eta", type=float, default=1)
     # Model hyperparemeters
-    parser.add_argument("--enc_dec_model", type=str, default="facebook/bart-base")
+    parser.add_argument("--enc_dec_model", type=str, default="model/bart-base")
     parser.add_argument("--tx_dim", type=int, default=512)
     parser.add_argument("--tx_depth", type=int, default=6)
     parser.add_argument("--scale_shift", action="store_true", default=False)

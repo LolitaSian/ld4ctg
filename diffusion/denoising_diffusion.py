@@ -25,6 +25,7 @@ import dataset_utils.text_dataset as text_dataset
 from utils.torch_utils import compute_grad_norm
 import utils.file_utils as file_utils
 from evaluation import evaluation
+import geoopt.geoopt.manifolds.poincare.math as pm
 
 ModelPrediction = namedtuple('ModelPrediction', ['pred_noise', 'pred_x_start'])
 
@@ -696,10 +697,16 @@ class Trainer(object):
 
             for (latents, mask) in model_outputs:
                 latents, mask = latents.to(device), mask.to(device)
+                # '''
+                # 将切空间的原点映射回欧式空间
+                # '''
+                # reconstructed_latent = pm.logmap0(encoder_output)
+                # euclidean_point = pm.project(reconstructed_latent)
                 if self.args.normalize_latent:
                     latents = self.ema.ema_model.unnormalize_latent(latents)
                 for k, kwargs in constant.generate_kwargs.items():
                     encoder_output = BaseModelOutput(last_hidden_state=latents.clone())
+
                     sample_ids = self.bart_model.generate(encoder_outputs=encoder_output, attention_mask=mask.clone(),
                                                           **kwargs)
                     texts_list = [self.tokenizer.decode(g, skip_special_tokens=True, clean_up_tokenization_spaces=True)
@@ -769,25 +776,15 @@ class Trainer(object):
                 for grad_accum_step in range(self.gradient_accumulate_every):
                     data = next(self.data_iter).to(device)
                     with torch.no_grad():
-                        bart_latent = self.bart_model.get_encoder()(input_ids=data['input_ids'],
+                        latent = self.bart_model.get_encoder()(input_ids=data['input_ids'],
                                                                attention_mask=data['attention_mask']).last_hidden_state
 
-                        '''
-                        添加双曲空间！！！
-                        '''
-                        # 写法1
-                        import geoopt.manifolds as manifolds
-                        # 创建 Poincaré Ball 模型
-                        poincare_ball = manifolds.PoincareBall()
-                        # 对输入数据进行双曲空间映射
-                        # 使用 Poincaré Ball 模型进行映射
-                        latent = poincare_ball.projx(bart_latent)
-
-                        # # 写法2
-                        # import geoopt.geoopt.manifolds.poincare.math as pm
-                        # pm_func = pm.expmap0
+                        # '''
+                        # 添加双曲空间！！！
+                        # '''
                         #
-                        # latent = pm_func(bart_latent)
+                        # latent = pm.expmap0(latent)
+
 
                         if self.args.normalize_latent:
                             if self.step == 0 and grad_accum_step == 0:

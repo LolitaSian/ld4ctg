@@ -1,3 +1,4 @@
+export WANDB_MODE=offline
 python train_text_diffusion.py \
   --dataset_name e2e \
   --adam_weight_decay 0.01 \
@@ -10,7 +11,6 @@ python train_text_diffusion.py \
   --objective pred_x0 \
   --enc_dec_model ./assist_model/bart-base/ \
   --num_samples 1000 \
-  --self_condition \
   --normalize_latent \
   --scale_shift \
   --loss_type l1 \
@@ -18,5 +18,4 @@ python train_text_diffusion.py \
   --sampling_timesteps 250 \
   --save_and_sample_every 10000 \
   --wandb_project denoising_diffusion \
-  --wandb_name e2e-bart-linear-Hyperbolic
 

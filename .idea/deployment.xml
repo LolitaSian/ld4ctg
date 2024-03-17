@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+  <component name="PublishConfigData" serverName="lyxin@183.175.12.53:22 password (2)" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="lyxin@183.175.12.53:22 password">
@@ -17,8 +17,12 @@
       <paths name="lyxin@183.175.12.53:22 password (2)">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/data02/lyxin/ld4ctg" local="$PROJECT_DIR$" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/data02/lyxin/ld4ctg/assist_model" />
+            <excludedPath path="/data02/lyxin/ld4ctg/saved_models" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
