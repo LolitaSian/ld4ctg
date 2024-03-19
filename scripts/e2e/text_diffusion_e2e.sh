@@ -1,5 +1,5 @@
 export WANDB_MODE=offline
-python train_text_diffusion.py \
+python train_text_diffusionp.py \
   --dataset_name e2e \
   --adam_weight_decay 0.01 \
   --learning_rate 1e-4 \

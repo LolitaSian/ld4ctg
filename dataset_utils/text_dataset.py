@@ -20,7 +20,7 @@ def get_dataset(dataset_name, metadata=False, synthetic_train_path=None):
         dataset = load_dataset("text", data_files={f'{split}': os.path.join(roc_data_path, f'roc_{split}.json') for split in ['train', 'valid']})
         dataset = process_roc_dataset(dataset)
     elif dataset_name == 'sst':
-        sst_data_path = 'datasets/SST2'
+        sst_data_path = 'datasets/SST'
         dataset = load_dataset(sst_data_path)
         dataset['valid'] = dataset['validation']
         del(dataset['validation'])
