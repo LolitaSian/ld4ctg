@@ -48,3 +48,13 @@ The only difference is that the `eval_test` flag is used instead of the `eval` f
 
 The `--resume_dir` argument will need to be updated as before.
 
+
+
+---
+双曲空间：
+无效，后续实验。
+/geoopt
+/hyrnn
+/poincare_embeddings
+/poincare_glove
+另外同名后缀p的文件
