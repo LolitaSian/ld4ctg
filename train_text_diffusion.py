@@ -71,8 +71,9 @@ def main(args):
 
     if args.gen_data:
         trainer.load(args.resume_dir)
-        for seed in [42, 43, 44, 45, 46]:
-            trainer.gen_synthetic_dataset(num_samples=args.num_samples, seed=seed)
+        # for seed in [42, 43, 44, 45, 46]:
+        #     trainer.gen_synthetic_dataset(num_samples=args.num_samples, seed=seed)
+        trainer.gen_synthetic_dataset(num_samples=args.num_samples, seed=42)
         return
     if args.eval:
         trainer.load(args.resume_dir)
@@ -84,7 +85,8 @@ def main(args):
     if args.eval_test:
         trainer.load(args.resume_dir)
 
-        for seed in [42, 43, 44, 45, 46]:
+        # for seed in [42, 43, 44, 45, 46]:
+        for seed in [42]:
             trainer.dataset = trainer.dataset.shuffle(seed)
             trainer.sample(seed=seed, test=True)
             if args.class_conditional:

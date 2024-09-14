@@ -1,5 +1,4 @@
-export WANDB_MODE=offline
-python train_text_diffusionp.py \
+python train_text_diffusion.py \
   --dataset_name e2e \
   --adam_weight_decay 0.01 \
   --learning_rate 1e-4 \
@@ -9,14 +8,12 @@ python train_text_diffusionp.py \
   --tx_dim 768 \
   --tx_depth 12 \
   --objective pred_x0 \
-  --enc_dec_model ./assist_model/bart-base/ \
+  --enc_dec_model ./bart-base/ \
   --num_samples 1000 \
+  --self_condition \
   --normalize_latent \
   --scale_shift \
-  --loss_type l2 \
-  --self_condition \
-  --beta_schedule cosine \
+  --loss_type l1 \
+  --beta_schedule sqrt \
   --sampling_timesteps 250 \
-  --save_and_sample_every 20000 \
-  --wandb_project denoising_diffusion \
-
+  --save_and_sample_every 10000

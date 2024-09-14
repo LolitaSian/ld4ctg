@@ -617,6 +617,13 @@ class Trainer(object):
 
                 for (latents, mask) in model_outputs:
                     latents, mask = latents.to(device), mask.to(device)
+
+                    # '''
+                    # 将双曲空间的原点映射回欧式空间
+                    # '''
+                    # latents = pm.logmap0(latents)
+                    # latents = pm.project(latents)
+
                     if self.args.normalize_latent:
                         latents = self.ema.ema_model.unnormalize_latent(latents)
                     encoder_output = BaseModelOutput(last_hidden_state=latents.clone())
@@ -751,6 +758,9 @@ class Trainer(object):
                     metrics[
                         f"model/{strategy}/{mauve_model_id}_{class_id_prefix}{key}_mauve"], _ = evaluation.compute_mauve(
                         all_texts_list, reference_text, mauve_model_id)
+            # 增加两个指标
+            metrics[f"model/{strategy}/{class_id_prefix}bleu"] = evaluation.compute_bleu(all_texts_list, reference_text)
+            metrics[f"model/{strategy}/{class_id_prefix}rougel"] = evaluation.compute_rouge(all_texts_list, reference_text)
 
         if len(self.reference_dict) == 0 or test:
             self.log_reference_metrics(test)
@@ -781,6 +791,12 @@ class Trainer(object):
                     with torch.no_grad():
                         latent = self.t5_model.get_encoder()(input_ids=data['input_ids'],
                                                              attention_mask=data['attention_mask']).last_hidden_state
+
+                        # '''
+                        # 添加双曲空间！！！
+                        # '''
+                        #
+                        # latent = pm.expmap0(latent)
 
                         if self.args.normalize_latent:
                             if self.step == 0 and grad_accum_step == 0:
@@ -836,6 +852,9 @@ class Trainer(object):
                                 data = next(self.val_iter).to(device)
                                 latent = self.t5_model.get_encoder()(input_ids=data['input_ids'], attention_mask=data[
                                     'attention_mask']).last_hidden_state
+                                # # 双曲空间
+                                # latent = pm.expmap0(latent)
+
                                 if self.args.normalize_latent or self.args.scale_latent:
                                     latent = self.diffusion.normalize_latent(latent)
 

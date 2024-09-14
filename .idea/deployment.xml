@@ -17,11 +17,11 @@
       <paths name="lyxin@183.175.12.53:22 password (2)">
         <serverdata>
           <mappings>
-            <mapping deploy="/data02/lyxin/ld4ctg" local="$PROJECT_DIR$" />
+            <mapping deploy="/ld4ctg" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
-            <excludedPath path="/data02/lyxin/ld4ctg/assist_model" />
-            <excludedPath path="/data02/lyxin/ld4ctg/saved_models" />
+            <excludedPath path="/ld4ctg/assist_model" />
+            <excludedPath path="/ld4ctg/saved_models" />
           </excludedPaths>
         </serverdata>
       </paths>

@@ -1,8 +1,9 @@
+export WANDB_MODE=offline
 python train_text_diffusion.py \
   --learning_rate 0.0001 \
   --dataset_name ag_news \
-  --num_train_steps 250000 \
-  --train_batch_size 128 \
+  --num_train_steps 500000 \
+  --train_batch_size 192 \
   --tx_dim 768 \
   --tx_depth 12 \
   --objective pred_x0 \
@@ -12,11 +13,9 @@ python train_text_diffusion.py \
   --scale_shift \
   --disable_dropout \
   --beta_schedule linear \
-  --loss_type l1 \
+  --loss_type l2 \
   --class_conditional \
   --self_condition \
-  --save_and_sample_every 10000 \
+  --save_and_sample_every 50000 \
   --wandb_project denoising_diffusion \
-  --wandb_name ag-bart-linear \
-  --resume_training \
-  --resume_dir saved_models/ag_news
+  --wandb_name ag-bart-l2

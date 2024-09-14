@@ -5,10 +5,646 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda5a29e-efee-410f-b8fd-d15f7ca71f97" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONSTANTS.py" beforeDir="false" afterPath="$PROJECT_DIR$/CONSTANTS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_utils/denoising_collator.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_utils/denoising_collator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/ROCstory/roc_train.json" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/ROCstory/roc_train.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/ROCstory/roc_valid.json" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/ROCstory/roc_valid.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/e2e_data/src1_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/e2e_data/src1_test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/e2e_data/src1_train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/e2e_data/src1_train.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/e2e_data/src1_valid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/e2e_data/src1_valid.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diffusion/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/diffusion/constant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diffusion/denoising_diffusion.py" beforeDir="false" afterPath="$PROJECT_DIR$/diffusion/denoising_diffusion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diffusion/denoising_diffusion_t5.py" beforeDir="false" afterPath="$PROJECT_DIR$/diffusion/denoising_diffusion_t5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diffusion/optimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/diffusion/optimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/evaluation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/mauve/mauve.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/mauve/mauve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/perplexity/perplexity.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/perplexity/perplexity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/word_count/word_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/word_count/word_count.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/.pylintrc" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/.pylintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/CHANGELOG.rst" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/CHANGELOG.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/README.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/devguide.rst" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/devguide.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/extended.rst" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/extended.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/extended/poincare.rst" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/extended/poincare.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/manifolds.rst" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/manifolds.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/optimizers.rst" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/optimizers.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/distance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/distance2plane.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/distance2plane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/gyrovector_parallel_transport.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/gyrovector_parallel_transport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/mobius_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/mobius_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/mobius_matvec.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/mobius_matvec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/mobius_sigmoid_apply.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/mobius_sigmoid_apply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/parallel_transport.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/plots/extended/poincare/parallel_transport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/samplers.rst" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/samplers.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/docs/tensors.rst" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/docs/tensors.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/docutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/docutils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/linalg/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/linalg/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/linalg/_expm.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/linalg/_expm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/linalg/batch_linalg.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/linalg/batch_linalg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/manifolds/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/manifolds/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/manifolds/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/manifolds/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/manifolds/euclidean.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/manifolds/euclidean.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/manifolds/poincare/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/manifolds/poincare/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/manifolds/poincare/math.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/manifolds/poincare/math.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/manifolds/sphere.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/manifolds/sphere.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/manifolds/stiefel.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/manifolds/stiefel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/optim/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/optim/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/optim/mixin.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/optim/mixin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/optim/radam.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/optim/radam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/optim/rsgd.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/optim/rsgd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/samplers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/samplers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/samplers/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/samplers/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/samplers/rhmc.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/samplers/rhmc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/samplers/rsgld.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/samplers/rsgld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/samplers/sgrhmc.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/samplers/sgrhmc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/tensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/tensor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/geoopt/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/geoopt/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/requirements-dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/requirements-dev.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/scripts/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/scripts/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/scripts/container.sh" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/scripts/container.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/tests/test_adam.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/tests/test_adam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/tests/test_euclidean.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/tests/test_euclidean.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/tests/test_manifold_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/tests/test_manifold_basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/tests/test_poincare_math.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/tests/test_poincare_math.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/tests/test_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/tests/test_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/tests/test_rhmc.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/tests/test_rhmc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/tests/test_rsgd.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/tests/test_rsgd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geoopt/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/geoopt/tests/test_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/experiment_run/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/experiment_run/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/experiment_run/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/experiment_run/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/experiment_run/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/experiment_run/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/experiment_run/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/experiment_run/runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/hyrnn/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/hyrnn/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/hyrnn/lookup_embedding.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/hyrnn/lookup_embedding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/hyrnn/nets.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/hyrnn/nets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/hyrnn/rm_nets.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/hyrnn/rm_nets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/prefix_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/prefix_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/requirements-dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/requirements-dev.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/tests/test_gru.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/tests/test_gru.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/tests/test_lookup_embedding.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/tests/test_lookup_embedding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyrnn/tests/test_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyrnn/tests/test_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/diffusion_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/diffusion_transformer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/diffusion_transformer_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/diffusion_transformer_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/x_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/x_transformer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/README.org" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/README.org" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/embed.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/embed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/adjacency_matrix_dataset.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/adjacency_matrix_dataset.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/adjacency_matrix_dataset.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/adjacency_matrix_dataset.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/checkpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/euclidean.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/euclidean.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/graph_dataset.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/graph_dataset.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/graph_dataset.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/graph_dataset.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/lorentz.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/lorentz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/manifold.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/manifold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/poincare.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/poincare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/rsgd.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/rsgd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/sn.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/sn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/hype/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/hype/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/reconstruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/reconstruction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/train-mammals.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/train-mammals.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare-embeddings/train-nouns.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare-embeddings/train-nouns.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/COPYING" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/COPYING" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/MANIFEST.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/README_poincare_word2vec.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/README_poincare_word2vec.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/appveyor.yml" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/appveyor.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/continuous_integration/appveyor/install.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/continuous_integration/appveyor/install.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/continuous_integration/appveyor/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/continuous_integration/appveyor/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/continuous_integration/appveyor/run_with_env.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/continuous_integration/appveyor/run_with_env.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docker/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docker/check_fast_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docker/check_fast_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docker/start_jupyter_notebook.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docker/start_jupyter_notebook.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Corpora_and_Vector_Spaces.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Corpora_and_Vector_Spaces.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/FastText_Tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/FastText_Tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Poincare Evaluation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Poincare Evaluation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Poincare Tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Poincare Tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Similarity_Queries.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Similarity_Queries.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Tensorboard_visualizations.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Tensorboard_visualizations.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Topic_dendrogram.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Topic_dendrogram.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Topics_and_Transformations.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Topics_and_Transformations.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Training_visualizations.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Training_visualizations.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Varembed.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Varembed.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/WMD_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/WMD_tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Word2Vec_FastText_Comparison.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Word2Vec_FastText_Comparison.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/WordRank_wrapper_quickstart.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/WordRank_wrapper_quickstart.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Wordrank_comparisons.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/Wordrank_comparisons.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/annoytutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/annoytutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/atmodel_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/atmodel_tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/keras_classifier_training_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/keras_classifier_training_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/mycorpus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/mycorpus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/news_corpus" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/news_corpus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/news_corpus.vocab" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/news_corpus.vocab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/questions-words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/questions-words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/word_vectors_training_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/datasets/word_vectors_training_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/deepir.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/deepir.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/distance_metrics.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/distance_metrics.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/distributed.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/distributed.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/doc2vec-IMDB.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/doc2vec-IMDB.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/doc2vec-lee.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/doc2vec-lee.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/doc2vec-wikipedia.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/doc2vec-wikipedia.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/downloader_api_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/downloader_api_tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/dtm_example.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/dtm_example.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/gensim Quick Start.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/gensim Quick Start.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/gensim_news_classification.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/gensim_news_classification.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/keras_wrapper.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/keras_wrapper.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/lda_model_difference.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/lda_model_difference.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/lda_training_tips.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/lda_training_tips.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/ldaseqmodel.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/ldaseqmodel.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/online_w2v_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/online_w2v_tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/poincare/poincare_burn_in_eps.patch" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/poincare/poincare_burn_in_eps.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/poincare/poincare_numpy.patch" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/poincare/poincare_numpy.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/sklearn_api.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/sklearn_api.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/soft_cosine_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/soft_cosine_tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/summarization_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/summarization_tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/test_notebooks.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/test_notebooks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/topic_coherence-movies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/topic_coherence-movies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/topic_coherence_model_selection.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/topic_coherence_model_selection.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/topic_coherence_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/topic_coherence_tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/topic_methods.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/topic_methods.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/topic_network.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/topic_network.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/translation_matrix.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/translation_matrix.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/wikinews-bigram-en.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/wikinews-bigram-en.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/notebooks/word2vec.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/notebooks/word2vec.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/_matutils.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/_matutils.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/_static/css/anythingslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/_static/css/anythingslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/_static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/_static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/about.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/about.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/apiref.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/apiref.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/changes_080.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/changes_080.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/_mmreader.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/_mmreader.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/bleicorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/bleicorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/corpora.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/corpora.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/csvcorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/csvcorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/dictionary.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/dictionary.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/hashdictionary.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/hashdictionary.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/indexedcorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/indexedcorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/lowcorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/lowcorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/malletcorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/malletcorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/mmcorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/mmcorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/sharded_corpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/sharded_corpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/svmlightcorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/svmlightcorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/textcorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/textcorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/ucicorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/ucicorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/wikicorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/corpora/wikicorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/dist_lda.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/dist_lda.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/dist_lsi.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/dist_lsi.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/distributed.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/distributed.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/downloader.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/downloader.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/gensim_theme/theme.conf" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/gensim_theme/theme.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/indextoc.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/indextoc.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/install.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/interfaces.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/interfaces.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/intro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/intro.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/matutils.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/matutils.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/_utils_any2vec.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/_utils_any2vec.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/atmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/atmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/basemodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/basemodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/callbacks.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/callbacks.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/coherencemodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/coherencemodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/deprecated/doc2vec.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/deprecated/doc2vec.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/deprecated/fasttext.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/deprecated/fasttext.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/deprecated/fasttext_wrapper.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/deprecated/fasttext_wrapper.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/deprecated/keyedvectors.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/deprecated/keyedvectors.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/deprecated/word2vec.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/deprecated/word2vec.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/doc2vec.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/doc2vec.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/fasttext.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/fasttext.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/hdpmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/hdpmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/keyedvectors.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/keyedvectors.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/lda_dispatcher.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/lda_dispatcher.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/lda_worker.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/lda_worker.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/ldamodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/ldamodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/ldamulticore.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/ldamulticore.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/ldaseqmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/ldaseqmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/logentropy_model.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/logentropy_model.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/lsi_dispatcher.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/lsi_dispatcher.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/lsi_worker.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/lsi_worker.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/lsimodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/lsimodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/models.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/models.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/normmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/normmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/phrases.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/phrases.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/poincare.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/poincare.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/rpmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/rpmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/tfidfmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/tfidfmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/translation_matrix.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/translation_matrix.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/utils_any2vec.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/utils_any2vec.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/word2vec.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/word2vec.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/dtmmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/dtmmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/fasttext.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/fasttext.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/ldamallet.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/ldamallet.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/ldavowpalwabbit.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/ldavowpalwabbit.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/varembed.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/varembed.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/wordrank.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/wordrank.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/wrappers.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/models/wrappers/wrappers.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/parsing/porter.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/parsing/porter.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/parsing/preprocessing.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/parsing/preprocessing.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/glove2word2vec.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/glove2word2vec.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/make_wiki_online.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/make_wiki_online.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/make_wiki_online_lemma.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/make_wiki_online_lemma.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/make_wiki_online_nodebug.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/make_wiki_online_nodebug.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/make_wikicorpus.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/make_wikicorpus.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/package_info.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/package_info.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/segment_wiki.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/segment_wiki.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/word2vec2tensor.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/word2vec2tensor.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/word2vec_standalone.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/scripts/word2vec_standalone.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/similarities/docsim.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/similarities/docsim.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/similarities/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/similarities/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/simserver.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/simserver.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/atmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/atmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/d2vmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/d2vmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/hdp.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/hdp.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/ldamodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/ldamodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/ldaseqmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/ldaseqmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/lsimodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/lsimodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/phrases.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/phrases.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/rpmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/rpmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/text2bow.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/text2bow.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/tfidf.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/tfidf.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/w2vmodel.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/sklearn_api/w2vmodel.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/bm25.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/bm25.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/commons.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/commons.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/graph.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/graph.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/keywords.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/keywords.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/mz_entropy.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/mz_entropy.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/pagerank_weighted.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/pagerank_weighted.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/summariser.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/summariser.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/syntactic_unit.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/syntactic_unit.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/textcleaner.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/summarization/textcleaner.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/support.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/support.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/test/utils.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/test/utils.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/aggregation.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/aggregation.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/direct_confirmation_measure.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/direct_confirmation_measure.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/indirect_confirmation_measure.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/indirect_confirmation_measure.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/probability_estimation.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/probability_estimation.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/segmentation.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/segmentation.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/text_analysis.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/topic_coherence/text_analysis.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/tut1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/tut1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/tut2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/tut2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/tut3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/tut3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/tutorial.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/tutorial.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/utils.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/utils.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/viz/poincare.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/viz/poincare.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/docs/src/wiki.rst" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/docs/src/wiki.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/ez_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/ez_setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim Quick Start.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim Quick Start.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/_matutils.c" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/_matutils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/_matutils.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/_matutils.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/_mmreader.c" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/_mmreader.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/_mmreader.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/_mmreader.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/bleicorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/bleicorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/csvcorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/csvcorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/hashdictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/hashdictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/indexedcorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/indexedcorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/lowcorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/lowcorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/malletcorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/malletcorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/mmcorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/mmcorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/sharded_corpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/sharded_corpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/svmlightcorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/svmlightcorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/textcorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/textcorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/ucicorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/ucicorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/corpora/wikicorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/corpora/wikicorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/downloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/dmlcorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/dmlcorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/gensim_build.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/gensim_build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/gensim_genmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/gensim_genmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/gensim_xml.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/gensim_xml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/runall.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/runall.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/sources.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/examples/dmlcz/sources.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/interfaces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/matutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/matutils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/_utils_any2vec.c" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/_utils_any2vec.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/_utils_any2vec.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/_utils_any2vec.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/atmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/atmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/base_any2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/base_any2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/basemodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/basemodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/callbacks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/coherencemodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/coherencemodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/doc2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/doc2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/fasttext.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/fasttext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/fasttext_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/fasttext_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/keyedvectors.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/keyedvectors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/old_saveload.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/old_saveload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/word2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/deprecated/word2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/doc2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/doc2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/doc2vec_inner.c" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/doc2vec_inner.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/doc2vec_inner.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/doc2vec_inner.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/fasttext.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/fasttext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/fasttext_inner.c" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/fasttext_inner.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/fasttext_inner.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/fasttext_inner.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/hdpmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/hdpmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/keyedvectors.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/keyedvectors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/lda_dispatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/lda_dispatcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/lda_worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/lda_worker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/ldamodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/ldamodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/ldamulticore.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/ldamulticore.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/ldaseqmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/ldaseqmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/logentropy_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/logentropy_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/lsimodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/lsimodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/normmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/normmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/phrases.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/phrases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/poincare.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/poincare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/rpmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/rpmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/tfidfmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/tfidfmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/translation_matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/translation_matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/utils_any2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/utils_any2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/voidptr.h" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/voidptr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/word2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/word2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/word2vec_inner.c" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/word2vec_inner.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/word2vec_inner.pxd" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/word2vec_inner.pxd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/word2vec_inner.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/word2vec_inner.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/dtmmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/dtmmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/fasttext.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/fasttext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/ldamallet.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/ldamallet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/ldavowpalwabbit.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/ldavowpalwabbit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/varembed.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/varembed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/wordrank.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/models/wrappers/wordrank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/nosy.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/nosy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/parsing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/parsing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/parsing/porter.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/parsing/porter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/parsing/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/parsing/preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/eval_pretrained_emb.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/eval_pretrained_emb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/glove2word2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/glove2word2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wiki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wiki_lemma.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wiki_lemma.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wiki_online.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wiki_online.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wiki_online_lemma.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wiki_online_lemma.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wiki_online_nodebug.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wiki_online_nodebug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wikicorpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/make_wikicorpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/package_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/package_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/word2vec2tensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/word2vec2tensor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/word2vec_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/word2vec_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/scripts/word2vec_standalone.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/scripts/word2vec_standalone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/similarities/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/similarities/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/similarities/docsim.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/similarities/docsim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/similarities/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/similarities/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/atmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/atmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/d2vmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/d2vmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/hdp.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/hdp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/ldamodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/ldamodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/ldaseqmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/ldaseqmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/lsimodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/lsimodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/phrases.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/phrases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/rpmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/rpmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/text2bow.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/text2bow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/tfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/tfidf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/w2vmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/sklearn_api/w2vmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/summarization/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/summarization/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/summarization/bm25.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/summarization/bm25.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/summarization/commons.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/summarization/commons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/summarization/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/summarization/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/summarization/keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/summarization/keywords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/summarization/mz_entropy.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/summarization/mz_entropy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/summarization/pagerank_weighted.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/summarization/pagerank_weighted.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/summarization/summarizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/summarization/summarizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/summarization/syntactic_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/summarization/syntactic_unit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/summarization/textcleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/summarization/textcleaner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/basetmtests.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/basetmtests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/simspeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/simspeed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/simspeed2.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/simspeed2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/svd_error.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/svd_error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_BM25.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_BM25.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_aggregation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_atmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_atmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_big.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_big.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_coherencemodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_coherencemodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_corpora.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_corpora.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_corpora_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_corpora_dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_corpora_hashdictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_corpora_hashdictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/DTM/sstats_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/DTM/sstats_test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/EN.1-10.cbow1_wind5_hs0_neg10_size300_smpl1e-05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/EN.1-10.cbow1_wind5_hs0_neg10_size300_smpl1e-05.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/IT.1-10.cbow1_wind5_hs0_neg10_size300_smpl1e-05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/IT.1-10.cbow1_wind5_hs0_neg10_size300_smpl1e-05.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/MC-30.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/MC-30.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/OPUS_en_it_europarl_train_one2ten.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/OPUS_en_it_europarl_train_one2ten.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/PathLineSentences/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/PathLineSentences/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/RG-65.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/RG-65.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/YP-130.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/YP-130.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/alldata-id-10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/alldata-id-10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/analogy_one_section.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/analogy_one_section.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/dtm_test.mm" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/dtm_test.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/head500.noblanks.cor_wordids.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/head500.noblanks.cor_wordids.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/high_precision.kv.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/high_precision.kv.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/ldavowpalwabbit.dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/ldavowpalwabbit.dict.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/ldavowpalwabbit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/ldavowpalwabbit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/lee.cor" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/lee.cor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/lee_background.cor" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/lee_background.cor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/lee_fasttext.vec" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/lee_fasttext.vec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/men_dataset.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/men_dataset.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/miIslita.cor" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/miIslita.cor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/mihalcea_tarau.kw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/mihalcea_tarau.kw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/mihalcea_tarau.kwpos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/mihalcea_tarau.kwpos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/mihalcea_tarau.summ.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/mihalcea_tarau.summ.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/mihalcea_tarau.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/mihalcea_tarau.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/msr_word_relationship.processed" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/msr_word_relationship.processed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/pang_lee_polarity.cor" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/pang_lee_polarity.cor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/pang_lee_polarity_fasttext.vec" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/pang_lee_polarity_fasttext.vec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/para2para_text1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/para2para_text1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/para2para_text2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/para2para_text2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/poincare_cp852.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/poincare_cp852.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/poincare_hypernyms.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/poincare_hypernyms.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/poincare_hypernyms_large.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/poincare_hypernyms_large.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/poincare_utf8.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/poincare_utf8.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/questions-words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/questions-words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/rare_word.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/rare_word.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/similarities0-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/similarities0-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/simlex999.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/simlex999.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/simlex999_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/simlex999_test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/simlex999_validation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/simlex999_validation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/simverb3500.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/simverb3500.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_corpus_ok.mm" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_corpus_ok.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_corpus_small.mm" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_corpus_small.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_glove.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_glove.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_mmcorpus_corrupt.mm" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_mmcorpus_corrupt.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_mmcorpus_no_index.mm" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_mmcorpus_no_index.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_mmcorpus_with_index.mm" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/test_mmcorpus_with_index.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.blei" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.blei" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.blei.vocab" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.blei.vocab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.low" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.low" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.mallet" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.mallet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.mm" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.svmlight" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.svmlight" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.uci" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.uci" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.uci.vocab" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testcorpus.uci.vocab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testlowdistinctwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testlowdistinctwords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testrepeatedkeywords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testrepeatedkeywords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testsummarization_unrelated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/testsummarization_unrelated.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/varembed_lee_subcorpus.cor" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/varembed_lee_subcorpus.cor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/word2vec_pre_kv_c" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/word2vec_pre_kv_c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/wordsim353.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/wordsim353.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/wordsim353_test.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/wordsim353_test.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/wordsim353_validation.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_data/wordsim353_validation.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_datatype.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_datatype.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_direct_confirmation.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_direct_confirmation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_doc2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_doc2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_dtm.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_dtm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_fasttext.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_fasttext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_fasttext_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_fasttext_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_glove2word2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_glove2word2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_hdpmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_hdpmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_indirect_confirmation.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_indirect_confirmation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_keras_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_keras_integration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_keyedvectors.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_keyedvectors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_keywords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_ldamallet_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_ldamallet_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_ldamodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_ldamodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_ldaseqmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_ldaseqmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_ldavowpalwabbit_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_ldavowpalwabbit_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_lee.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_lee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_logentropy_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_logentropy_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_lsimodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_lsimodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_matutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_matutils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_miislita.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_miislita.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_normmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_normmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_parsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_parsing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_phrases.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_phrases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_poincare.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_poincare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_probability_estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_probability_estimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_rpmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_rpmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_segmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_segmentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_sharded_corpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_sharded_corpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_similarities.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_similarities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_similarity_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_similarity_metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_sklearn_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_sklearn_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_summarization.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_summarization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_text_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_text_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_tfidfmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_tfidfmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_tmdiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_tmdiff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_translation_matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_translation_matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_varembed_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_varembed_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_word2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_word2vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/test_wordrank_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/test_wordrank_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/test/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/test/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/aggregation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/direct_confirmation_measure.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/direct_confirmation_measure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/indirect_confirmation_measure.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/indirect_confirmation_measure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/probability_estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/probability_estimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/segmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/segmentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/text_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/topic_coherence/text_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/viz/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/viz/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/gensim/viz/poincare.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/gensim/viz/poincare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/data/wordnet_topmost_and_bottommost_words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/data/wordnet_topmost_and_bottommost_words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/scripts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/scripts/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/scripts/glove_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/scripts/glove_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/src/glove.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/src/glove.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/src/glove_inner.c" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/src/glove_inner.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/src/glove_inner.pxd" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/src/glove_inner.pxd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/src/glove_inner.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/src/glove_inner.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/src/vfast_invsqrt.h" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/src/vfast_invsqrt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/glove_code/src/voidptr.h" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/glove_code/src/voidptr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/make_glove.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/make_glove.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/make_word2vec.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/make_word2vec.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/analysis_of_init_from_pretrained_word2vec.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/analysis_of_init_from_pretrained_word2vec.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/baselines_checks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/baselines_checks.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/cherry_picked_hierarchies_2D_plots-MIX-GLOVE.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/cherry_picked_hierarchies_2D_plots-MIX-GLOVE.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/cherry_picked_hierarchies_2D_plots.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/cherry_picked_hierarchies_2D_plots.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/extract_google_analogy_dataset_vocab.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/extract_google_analogy_dataset_vocab.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/hyperlex_analysis_word2vec.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/hyperlex_analysis_word2vec.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/hyperlex_and_wbless_eval_MIX-GLOVE.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/hyperlex_and_wbless_eval_MIX-GLOVE.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/leimeister_paper_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/leimeister_paper_analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/poincare_checks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/poincare_checks.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/poincare_embeddings_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/poincare_embeddings_analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/poincare_embeddings_analysis_GLOVE.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/poincare_embeddings_analysis_GLOVE.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/supervised_hyperlex_eval.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/supervised_hyperlex_eval.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/target_context_word_embeddings_2D_plots.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/target_context_word_embeddings_2D_plots.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/target_context_word_embeddings_2D_plots_GLOVE.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/target_context_word_embeddings_2D_plots_GLOVE.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/target_context_word_embeddings_2D_plots_MIX-GLOVE.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/target_context_word_embeddings_2D_plots_MIX-GLOVE.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/training_2D_animation_GLOVE.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/training_2D_animation_GLOVE.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/training_2D_animation_and_tSNE_word2vec.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/training_2D_animation_and_tSNE_word2vec.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/wordnet_levels_colored_2D-MIX-GLOVE.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/wordnet_levels_colored_2D-MIX-GLOVE.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/notebooks/wordnet_levels_colored_2D.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/notebooks/wordnet_levels_colored_2D.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/plot/plot_glove_training.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/plot/plot_glove_training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/plot/plot_train_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/plot/plot_train_loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/plot/plot_word2vec_training.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/plot/plot_word2vec_training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/run_glove.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/run_glove.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/run_word2vec.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/run_word2vec.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/tox.ini" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/tox.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/tutorials.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/tutorials.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/compute_avg_delta_hyperbolicity.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/compute_avg_delta_hyperbolicity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/eval_w2v_initialization_experiments.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/eval_w2v_initialization_experiments.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/extract_coocc_pairs_restrict_vocab.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/extract_coocc_pairs_restrict_vocab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/extract_quads_for_avg_delta_hyperbolicity.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/extract_quads_for_avg_delta_hyperbolicity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/format_coocc_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/format_coocc_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/format_eval_logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/format_eval_logs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/get_model_eval_and_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/get_model_eval_and_stats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/get_vocabulary_from_sim_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/get_vocabulary_from_sim_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/lexical_entailment_eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/lexical_entailment_eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/nickel_transitive_closure.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/nickel_transitive_closure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/run_all_eval_leonhard.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/run_all_eval_leonhard.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/run_hypernymy_eval.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/run_hypernymy_eval.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/run_lr_sweep.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/run_lr_sweep.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/run_w2v_initialization_experiments.sh" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/run_w2v_initialization_experiments.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/split_similarity_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/split_similarity_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poincare_glove/util_scripts/text2bin_coocc_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/poincare_glove/util_scripts/text2bin_coocc_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/eval_text_diffusion.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/eval_text_diffusion.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/gen_text_diffusion.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/gen_text_diffusion.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion _e2e.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion _e2e.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion_ag.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion_ag.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion_ro.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion_ro.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion_sst.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/test_eval_text_diffusion_sst.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_ag_news.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_ag_news.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_roc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_roc.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_roc_continue.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_roc_continue.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_sst2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/diffusion/text_diffusion_sst2.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/e2e/text_diffusion_e2e.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/e2e/text_diffusion_e2e.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/e2e/text_diffusion_e2e_continue.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/e2e/text_diffusion_e2e_continue.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/e2e/text_diffusion_e2el2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/e2e/text_diffusion_e2el2.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/e2e/text_diffusion_e2esm.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/e2e/text_diffusion_e2esm.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_text_diffusion.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_text_diffusion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/file_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/file_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/torch_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/torch_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,22 +686,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "F:/ld4ctg",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/ld4ctg&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\ld4ctg\utils" />
@@ -201,7 +837,19 @@
       <workItem from="1710923575006" duration="644000" />
       <workItem from="1710926921881" duration="4821000" />
       <workItem from="1710999503036" duration="19000" />
-      <workItem from="1711000630880" duration="228000" />
+      <workItem from="1711000630880" duration="1031000" />
+      <workItem from="1711007802733" duration="4614000" />
+      <workItem from="1711033902353" duration="2153000" />
+      <workItem from="1711120338773" duration="1635000" />
+      <workItem from="1711637170067" duration="1005000" />
+      <workItem from="1712325678512" duration="681000" />
+      <workItem from="1712392515198" duration="467000" />
+      <workItem from="1712500479447" duration="44000" />
+      <workItem from="1712500897317" duration="490000" />
+      <workItem from="1713063567322" duration="209000" />
+      <workItem from="1721443616762" duration="777000" />
+      <workItem from="1726277117201" duration="29000" />
+      <workItem from="1726277167109" duration="81000" />
     </task>
     <servers />
   </component>

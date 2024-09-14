@@ -25,6 +25,7 @@ import dataset_utils.text_dataset as text_dataset
 from utils.torch_utils import compute_grad_norm
 import utils.file_utils as file_utils
 from evaluation import evaluation
+import geoopt.geoopt.manifolds.poincare.math as pm
 
 ModelPrediction = namedtuple('ModelPrediction', ['pred_noise', 'pred_x_start'])
 
@@ -696,6 +697,11 @@ class Trainer(object):
 
             for (latents, mask) in model_outputs:
                 latents, mask = latents.to(device), mask.to(device)
+                # '''
+                # 将切空间的原点映射回欧式空间
+                # '''
+                # reconstructed_latent = pm.logmap0(encoder_output)
+                # euclidean_point = pm.project(reconstructed_latent)
                 if self.args.normalize_latent:
                     latents = self.ema.ema_model.unnormalize_latent(latents)
                 for k, kwargs in constant.generate_kwargs.items():
@@ -772,6 +778,13 @@ class Trainer(object):
                     with torch.no_grad():
                         latent = self.bart_model.get_encoder()(input_ids=data['input_ids'],
                                                                attention_mask=data['attention_mask']).last_hidden_state
+
+                        # '''
+                        # 添加双曲空间！！！
+                        # '''
+                        #
+                        # latent = pm.expmap0(latent)
+
 
                         if self.args.normalize_latent:
                             if self.step == 0 and grad_accum_step == 0:
